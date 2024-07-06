@@ -4,12 +4,26 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.training.designpattern.builderpattern.UserProfileBuilder
+import com.training.designpattern.factorypattern.CreatorNotification
+import com.training.designpattern.factorypattern.Notification
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        builderPattern()
+        factoryPattern()
+    }
+
+    private fun factoryPattern() { // this is factory pattern example
+        val factory = CreatorNotification()
+        val notification = factory.createNotification("email")
+        notification.sendNotification("Hello, World!")
+        Log.d("Notification", "Notification sent ${notification::class.java.simpleName}")
+    }
+
+    private fun builderPattern() { // this is builder pattern example
         val builder = UserProfileBuilder.Builder()
             .setName("John")
             .setAge(25)
@@ -18,6 +32,6 @@ class MainActivity : AppCompatActivity() {
             .build()
 
         Log.d("UserProfile", builder.toString())
-
     }
+
 }
