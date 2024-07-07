@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.training.designpattern.builderpattern.UserProfileBuilder
 import com.training.designpattern.factorypattern.CreatorNotification
 import com.training.designpattern.factorypattern.Notification
+import com.training.designpattern.singletonpattern.DataBase
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +15,11 @@ class MainActivity : AppCompatActivity() {
 
         builderPattern()
         factoryPattern()
+        singletonPattern()
+    }
+
+    private fun singletonPattern() {  //this is singleton pattern example
+        DataBase.insert()
     }
 
     private fun factoryPattern() { // this is factory pattern example
