@@ -1,4 +1,4 @@
-package com.training.designpattern.builderpattern
+package com.training.designpattern.creationalpattern.builderpattern
 
 data class UserProfileBuilder(
     var name: String,

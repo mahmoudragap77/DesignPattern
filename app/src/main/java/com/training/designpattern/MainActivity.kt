@@ -3,10 +3,10 @@ package com.training.designpattern
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.training.designpattern.builderpattern.UserProfileBuilder
-import com.training.designpattern.factorypattern.CreatorNotification
-import com.training.designpattern.factorypattern.Notification
-import com.training.designpattern.singletonpattern.DataBase
+import com.training.designpattern.creationalpattern.builderpattern.UserProfileBuilder
+import com.training.designpattern.creationalpattern.factorypattern.CreatorNotification
+import com.training.designpattern.creationalpattern.factorypattern.Notification
+import com.training.designpattern.creationalpattern.singletonpattern.DataBase
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

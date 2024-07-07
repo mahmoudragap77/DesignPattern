@@ -1,4 +1,4 @@
-package com.training.designpattern.factorypattern
+package com.training.designpattern.creationalpattern.factorypattern
 
 interface Notification {
 

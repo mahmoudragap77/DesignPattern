@@ -1,4 +1,4 @@
-package com.training.designpattern.singletonpattern
+package com.training.designpattern.creationalpattern.singletonpattern
 
 import android.util.Log
 

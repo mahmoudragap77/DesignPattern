@@ -1,7 +1,7 @@
-package com.training.designpattern.factorypattern
+package com.training.designpattern.creationalpattern.factorypattern
 
- class CreatorNotification {
-     fun createNotification(message: String): Notification{
+ class CreatorNotification{
+     fun createNotification(message: String): Notification {
 
          return when (message) {
              "email" -> EmailNotification()
